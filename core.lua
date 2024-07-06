@@ -3,5 +3,5 @@ local screensize = vec2(ac.getSim().windowWidth, ac.getSim().windowHeight)
 local imageSize = 100 -- Set this to the size you want the image to be
 
 function script.drawUI(dt)
-    ui.drawImage(imagesrc, vec2(0, 30), vec2(90 + imageSize, 30 + imageSize), false)
+    ui.drawImage(imagesrc, vec2(-10, 10), vec2(90 + imageSize, 30 + imageSize), false)
 end
