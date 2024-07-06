@@ -1,7 +1,7 @@
-local imagesrc = 'https://cdn.discordapp.com/attachments/1257972518258610177/1258353673780858891/R_no_background_200.png?ex=66890e2e&is=6687bcae&hm=2bf2b38e755c8f81973d00ce4f8d3789841b51cd29545ef76c62def48a5f65fe&'
-local screensize = vec2(ac.getSim().windowWidth,ac.getSim().windowHeight)
-local imageSize,buffer = 200,200
+local imagesrc = 'https://media.discordapp.net/attachments/1257972518258610177/1258353673780858891/R_no_background_200.png?ex=668a5fae&is=66890e2e&hm=40a060adceee5d288407b307e5b2dd7715ef4ed1b86f7d11a8e64bdf74eae373&=&format=webp&quality=lossless&width=231&height=154'
+local screensize = vec2(ac.getSim().windowWidth, ac.getSim().windowHeight)
+local imageSize = 100 -- Set this to the size you want the image to be
 
 function script.drawUI(dt)
-    ui.drawImage(imagesrc, vec2(buffer,screensize.y-imageSize-buffer), vec2(imageSize+buffer,screensize.y-buffer), false)
+    ui.drawImage(imagesrc, vec2(40, 30), vec2(90 + imageSize, 30 + imageSize), false)
 end
